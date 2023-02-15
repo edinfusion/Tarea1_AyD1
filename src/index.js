@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false}));
 
 app.use("/api", require("./routes/ruta1.js"));//post
-app.use("/api", require("./routes/ruta1.js"));//get
+app.use("/api", require("./routes/ruta2.js"));//get
 
 app.listen(app.get('port'), () => {
     console.log('Server on port', app.get('port'));
