@@ -7,7 +7,7 @@ exports.query1 = async (req, res) => {
         if (valor1 == null || valor2 == null || typeof valor1 !== 'number' || typeof valor2 !== 'number') {
             res.status(400).json({ error: "Faltan datos/valores deben ser solo numericos" });
         }
-        var resultado = valor1 + valor2;
+        var resultado = valor1 * valor2;
         res.status(200).json({ resultado: resultado });
     } catch (err) {
         console.error(err.message);
